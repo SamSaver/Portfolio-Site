@@ -6,6 +6,7 @@
   <title>Samarth</title>
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/styles.css">
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
@@ -51,39 +52,44 @@
     <h2>a programmer</h2>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
     <img src="images/mountain.png" alt="mountain image">
+
   </div>
   <div class="middle-container">
-    <div class="profile" id="about">
+
+    <div class="profile" data-aos="fade-up" id="about">
       <img class="Sam" src="images/sam.png" alt="Samarth Image">
       <h2>Hello.</h2>
-      <p class="paragraph-1 ease-effect">I am a full stack developer who loves to code. I ❤️ competitive programming and designing web pages. Currently in IIT Bhilai.</p>
+      <p class="paragraph-1">I am a full stack developer who loves to code. I ❤️ competitive programming and designing web pages. Currently in IIT Bhilai.</p>
     </div>
     <hr class="line-1">
+
     <div class="skills" id="skills">
-      <h2>My Skills.</h2>
 
-      <div class="parallax"></div>
-
-      <div class="skill-row ease-effect">
+      <h2 data-aos="fade-up">My Skills.</h2>
+      <div class="skill-row" data-aos="fade-left">
         <img class="chillies-img" src="images/chillies.png" alt="Chillies">
         <h3>Website Development</h3>
         <p class="">I've started being a website developer at the age of 18 (2019-20). I know to make websites using HTML, CSS and Javascript with a good hold on backend programming using various frameworks
           as Node and React with a wide knowledge of using Databases bases on SQL or NoSQL like Mongo db.</p>
       </div>
-      <div class="skill-row ease-effect">
+
+      <div class="skill-row" data-aos="fade-right">
         <img class="html-img" src="images/code.svg" alt="">
         <h3>Programming</h3>
         <p class="">I started programming when was in 11<sup>th</sup> standard (2018). At first I started with C and C++ and then I started working with
           python in 12<sup>th</sup>. I'm good at competitive programming and regular in various competitions.</p>
       </div>
+
     </div>
     <hr class="line-1">
-    <div class="contact-me ease-effect" id="contact">
+
+    <div class="contact-me" data-aos="zoom-in" id="contact">
       <h2>Get In Touch</h2>
       <h3>If you love coding as much as I do.</h3>
       <p class="know-me-para">Love coding as much as I do? Let's talk about how awesome it is! We can eat hot wings while we code.</p>
       <a href="mailto:riemeltm@gmail.com" class="myButton">CONTACT ME</a>
     </div>
+
   </div>
 
 
@@ -94,7 +100,12 @@
     <p class="copyright">© 2020 Samarth Singh Pawar.</p>
   </div>
 
-<script src="index.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
 </body>
 
 </html>
